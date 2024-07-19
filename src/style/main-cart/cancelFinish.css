@@ -1,0 +1,25 @@
+.finish-button, .cancel-button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px black
+}
+
+.finish-button:hover, .cancel-button:hover {
+    border: 1px solid white;
+}
+
+.cancel-button {
+    margin-right: auto;
+    margin-left: 5%;
+    background-color: red;
+}
+
+.finish-button {
+    margin-left: auto;
+    margin-right: 5%;
+    background-color: green;
+}
+

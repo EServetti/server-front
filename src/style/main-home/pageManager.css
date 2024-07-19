@@ -1,0 +1,29 @@
+.page-manager {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.prev-page {
+    margin-left: 60px;
+}
+.prev-page:hover {
+    margin-left: 60px;
+}
+.prev-page-none {
+    display: none;
+}
+
+.next-page {
+    margin-left: 60px;
+}
+
+.next-page:hover {
+    margin-left: 60px;
+}
+
+.next-page-none {
+    display: none;
+}
+
+

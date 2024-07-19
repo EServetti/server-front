@@ -1,0 +1,48 @@
+.main-footer {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b49a67;
+  color: white;
+  border-top: 2px solid white;
+  padding: 10px;
+}
+
+.contact-section {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 15px;
+  border-right: 1px solid white;
+  padding: 5px
+}
+
+.about-us-section {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 15px;
+  border-right: 1px solid white;
+  padding: 5px
+}
+
+.about-us-section a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.rights {
+    padding: 5px;
+    margin-left: auto;
+    margin-top: auto;
+}

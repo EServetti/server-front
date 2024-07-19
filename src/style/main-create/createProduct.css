@@ -1,0 +1,97 @@
+.main-create {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.create-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+    margin: 0 50px;
+}
+
+.create-top {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.create-form {
+    height: auto;
+    width: 80%;
+    color: white;
+    border: 1px solid burlywood;
+    background-image: url("/img/madera.jpeg");
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.form-and-product {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.create-form form {
+    height: auto;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+}
+
+.create-form input, select, label {
+    height: auto;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid black;
+}
+.create-form span {
+    color: black;
+}
+
+.create-form select {
+    font-size: 13px;
+    color: gray;
+    width: 80%;
+}
+
+.create-form label {
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+}
+
+.create-photo-input {
+    display: none;
+}
+
+.create-form button {
+    background-color: lightgray;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-form button:hover {
+    padding: 5px 10px;
+}

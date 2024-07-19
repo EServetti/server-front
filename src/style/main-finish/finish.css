@@ -1,0 +1,150 @@
+.main-finish {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.finish-title {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.finish-cont {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.total-price {
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/madera.jpeg");
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 10px 5px 30px black;
+    border: 2px solid white;
+    font-size: 25px;
+}
+
+.payment{
+    min-height: 400px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/img/madera.jpeg");
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 10px 5px 30px black;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.payment-form {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.payment-form input, select {
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.pay-button {
+    height: 35px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: #6781B4;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px black
+}
+
+.pay-button:hover {
+    height: 35px;
+    width: 80px;
+    border: 1px solid white;
+}
+
+.pay-contant {
+    height: auto;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.credit-card-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+.method img {
+    height: 50px;
+    width: 50px;
+}
+
+.customer-inputs {
+    height: auto;
+    width: 50%;
+    border-right: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 10px;
+    gap: 5px;
+}

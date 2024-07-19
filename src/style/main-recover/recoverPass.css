@@ -1,0 +1,65 @@
+.main-recover {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.recover-section {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    flex-direction: column;
+    background-image: url("/img/madera.jpeg");
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+}
+
+.recover-section span {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 25px;
+    padding: 10px;
+}
+
+.recover-section input {
+    height: auto;
+    width: 80%;
+}
+
+.recover-form {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.send-recover-email{
+    height: 100%;
+    width: 20%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-change-email {
+    height: auto;
+    width: 50%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

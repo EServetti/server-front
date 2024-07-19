@@ -1,0 +1,86 @@
+.single-cart {
+    height: 430px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    border-radius: 20px;
+    border: 2px solid rgb(101, 67, 33);
+}
+
+.single-cart img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid burlywood;
+}
+
+.cart-info {
+    height: 35%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/img/madera.jpeg");
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    box-shadow: 10px 5px 30px black;
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+.delete-cart {
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.delete-cart:hover {
+    height: 35px;
+    width: 80px;
+}
+
+.update-cart-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-quantity {
+    height: auto;
+    width: 50%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-align: right;
+    padding: 10px;
+}
+
+.update-button {
+    height: auto;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #6781B4;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+

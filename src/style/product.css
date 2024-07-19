@@ -1,0 +1,70 @@
+.product img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid white
+}
+
+._id{
+    display:  none;
+}
+
+.product {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/madera.jpeg");
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+.see-product {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: #6781B4;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px black
+}
+.see-product:hover {
+    height: 38px;
+    width: 110px;
+    margin: 5px;
+    background-color: #6781B4;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.products-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 50px
+}
+
+.product .description {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}

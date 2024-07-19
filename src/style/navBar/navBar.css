@@ -1,0 +1,120 @@
+.navBar {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  font-size: 30px;
+  background-color: #b49a67;
+  color: white;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.commerce-logo {
+  color: white;
+  margin-right: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 20px 10px 20px 10px;
+  white-space: nowrap;
+  box-shadow: 10px 5px 40px black;
+}
+
+.cart-and-user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.user-photo {
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.cart-nav {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+.home-and-create {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+details[open] .user-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 30px 40px -20px black;
+}
+
+.user-details{
+  position:absolute;
+  top: 100%;
+  right: 5%;
+  background-color: #b49a67;
+  padding: 10px;
+  z-index: 10;
+  display: none;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-details span {
+  border-bottom: 2px solid white;
+}
+
+summary{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+.my-account {
+  cursor: pointer;
+}
+
+.close-session {
+  margin-right: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-session-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 0;
+}

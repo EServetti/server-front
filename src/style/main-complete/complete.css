@@ -1,0 +1,71 @@
+.main-complete {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-component {
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.form-component h2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.form-component input {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.inp-document {
+    display: none;
+}
+
+.lab-document{
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.complete-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.send-complete {
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+
+}
+
+.complete-form label{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}

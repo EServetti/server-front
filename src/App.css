@@ -1,0 +1,26 @@
+nav {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    position: relative; 
+    z-index: 1;
+}
+main {
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #466365;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.def-comp{
+    height: 100vh;
+    width: 100wv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
