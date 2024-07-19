@@ -1,7 +1,13 @@
 import sendRecoverMail from "../../../functions/getBackPass.jsx";
 import "../../../style/main-recover/recoverPass.css";
+import { useContext } from "react";
+import {AppContext} from "../../../../AppContext.jsx"
 
 function RecoverPass() {
+  const {globalState} = useContext(AppContext)
+  if(globalState.online) {
+    location.replace("/")
+  }
   function handleClick(e) {
     e.preventDefault()
     sendRecoverMail()

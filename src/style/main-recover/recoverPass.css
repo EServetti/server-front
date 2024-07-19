@@ -46,6 +46,10 @@
     border-radius: 15px;
 }
 
+.recover-form label {
+    border: none;
+}
+
 .send-recover-email{
     height: 100%;
     width: 20%;
@@ -62,4 +66,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.change-form label {
+    border: none;
 }
