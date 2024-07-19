@@ -1,5 +1,5 @@
-import sendRecoverMail from "../../functions/getBackPass.jsx";
-import "../../style/main-recover/recoverPass.css";
+import sendRecoverMail from "../../../functions/getBackPass.jsx";
+import "../../../style/main-recover/recoverPass.css";
 
 function RecoverPass() {
   function handleClick(e) {

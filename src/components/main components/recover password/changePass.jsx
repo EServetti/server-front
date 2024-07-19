@@ -1,5 +1,5 @@
-import "../../style/main-recover/recoverPass.css";
-import { useChangePass } from "../../functions/getBackPass";
+import "../../../style/main-recover/recoverPass.css";
+import { useChangePass } from "../../../functions/getBackPass.jsx";
 
 function ChangePass({routeParams}) {
     function handleClick(e) {

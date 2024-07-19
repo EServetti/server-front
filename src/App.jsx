@@ -13,8 +13,8 @@ import FinishBuyCont from "./components/main components/finish buy/finishBuyCont
 import MyAccount from "./components/main components/user data/account.jsx";
 import Footer from "./components/footer components/footer.jsx";
 import CompleteAccount from "./components/main components/complete account/complete.jsx";
-import RecoverPass from "./components/recover password/recoverPass.jsx";
-import ChangePass from "./components/recover password/changePass.jsx";
+import RecoverPass from "./components/main components/recover password/recoverPass.jsx";
+import ChangePass from "./components/main components/recover password/changePass.jsx";
 import Verify from "./components/main components/register/verify.jsx";
 import CreateProduct from "./components/main components/create/createProduct.jsx";
 
