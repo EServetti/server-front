@@ -42,11 +42,11 @@ const routes = [
     component: ProductDataCont,
   },
   {
-    path: "/cart/:uid",
+    path: "/cart",
     component: CartContainer,
   },
   {
-    path: "/finish/:uid",
+    path: "/finish",
     component: FinishBuyCont,
   },
   { 

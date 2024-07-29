@@ -1,18 +1,13 @@
 import { port } from "../../port";
 import Swal from "sweetalert2";
 
-async function cancelBuy(_id, change, setChange) {
-  console.log(_id);
-  const data = {
-    _id: _id
-  }
+async function cancelBuy(change, setChange) {
   let canceled = await fetch(`http://localhost:${port}/api/carts/all`, {
     method: "DELETE",
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(data),
   });
   canceled = await canceled.json();
   if (canceled.statusCode === 200) {

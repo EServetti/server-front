@@ -14,22 +14,18 @@ import { Helmet } from "react-helmet";
 import { AppContext } from "../../../../AppContext";
 
 
-function CartContainer({ routeParams }) {
+function CartContainer() {
   const {globalState} = useContext(AppContext)
   const {online, userData} = globalState
   useEffect(() => {
     if(!globalState.loading && !online) {
       location.replace("/")
     }
-    if(!globalState.loading && userData?._id !== routeParams.uid) {
-      location.replace("/")
-    }
   }, [globalState.loading, online, userData])
 
 
   const [page, setPage] = useState(1);
-  const { uid } = routeParams;
-  const { carts, loading, change, setChange } = useCart(uid);
+  const { carts, loading, change, setChange } = useCart();
   const cartsLength = carts && carts.statusCode === 200 ? carts.message.length : 0
   const nextExists = page < Math.ceil(cartsLength / 3) ? page : null
   const pageManager = {
@@ -60,7 +56,7 @@ function CartContainer({ routeParams }) {
         {carts?.statusCode === 200 && returnCarts(carts.message, page, change, setChange)}
       </div>
       <section className="pages-cart">
-        <CancelBuy _id={uid} carts={cartsLength} change={change} setChange={setChange}/>
+        <CancelBuy carts={cartsLength} change={change} setChange={setChange}/>
         <PrevPage page={pageManager} prev={prev}/>
         <NextPage page={pageManager} next={next}/>
         <FinishBuy carts={cartsLength}/>

@@ -10,7 +10,7 @@ function FinishBuy({ carts }) {
 function Button() {
   const { globalState, loading } = useContext(AppContext);
   const _id = globalState.loading ? null : globalState.userData._id;
-  const path = `/finish/${_id}`;
+  const path = `/finish`;
   return (
     <Link to={path} className={"finish-button"}>
       Finish buy

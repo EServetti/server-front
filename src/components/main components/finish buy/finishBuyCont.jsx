@@ -11,23 +11,19 @@ import useTotal from "../../../functions/getTotalPrice";
 import CreditCardInput from "../../../style/main-finish/cardInput";
 import { Helmet } from "react-helmet";
 
-function FinishBuyCont({ routeParams }) {
+function FinishBuyCont() {
   const [method, setMethod] = useState("");
-  const { uid } = routeParams;
   const { globalState } = useContext(AppContext)
   const {online, userData } = globalState
   useEffect(() => {
     if(!globalState.loading && !online ){
       location.replace("/")
     }
-    if(!globalState.loading && userData?._id !== uid) {
-      location.replace("/")
-    }
   },[globalState.loading, online, userData])
 
 
-  const { carts, loading } = useFinishCarts(uid);
-  const { total, load } = useTotal(uid);
+  const { carts, loading } = useFinishCarts();
+  const { total, load } = useTotal();
 
   return (
     <div className="main-finish">

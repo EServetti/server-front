@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { port } from "../../port.js";
 
-function useCart(_id){
+function useCart(){
   const [carts, setCarts] = useState(null)
   const [loading, setLoading] = useState(true)
   const [change, setChange] = useState(false)
 
   useEffect(() => {
-    async function getCarts(_id) {
-      let carts = await fetch(`http://localhost:${port}/api/tickets/${_id}`,{
+    async function getCarts() {
+      let carts = await fetch(`http://localhost:${port}/api/tickets`,{
         credentials: "include"
       })
       carts = await carts.json()
@@ -16,7 +16,7 @@ function useCart(_id){
       setLoading(false)
     }
 
-    getCarts(_id)
+    getCarts()
     
   }, [change])
 
