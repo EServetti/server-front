@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { port } from "../../port.js";
+import { path } from "../../port.js";
 
 function handleClick() {
     const email = document.querySelector("#email").value;
@@ -26,7 +26,7 @@ function handleClick() {
 }
 
 async function registerUser(data) {
-    let register = await fetch(`http://localhost:${port}/api/sessions/register`, {
+    let register = await fetch(`${path}/api/sessions/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

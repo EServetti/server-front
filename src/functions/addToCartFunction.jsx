@@ -1,4 +1,4 @@
-import { port } from "../../port"
+import { path} from "../../port"
 import Swal from "sweetalert2";
 
 async function addToCart(_id, online) {
@@ -8,7 +8,7 @@ async function addToCart(_id, online) {
     product_id: _id,
     quantity: 1
   }
-  let added = await fetch(`http://localhost:${port}/api/carts`, {
+  let added = await fetch(`${path}/api/carts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

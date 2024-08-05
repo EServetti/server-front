@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { port } from "../../port";
+import { path } from "../../port";
 
 function useVerify(email, verifyCode, setContent) {
   
   async function sendVerify(email, verifyCode) {
-    const url = `http://localhost:${port}/api/sessions/verify?email=${email}&verifyCode=${verifyCode}`
+    const url = `${path}/api/sessions/verify?email=${email}&verifyCode=${verifyCode}`
     let change = await fetch(url)
     change = await change.json();
     if(change.statusCode === 200) {

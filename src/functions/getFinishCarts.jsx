@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { port } from "../../port.js";
+import { path } from "../../port.js";
 
 
 function useFinishCarts() {
@@ -9,7 +9,7 @@ function useFinishCarts() {
 
   useEffect(() => {
     async function getCarts() {
-      let carts = await fetch(`http://localhost:${port}/api/tickets`, {
+      let carts = await fetch(`${path}/api/tickets`, {
         credentials: "include",
       });
       carts = await carts.json();

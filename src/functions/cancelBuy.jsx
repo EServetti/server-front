@@ -1,8 +1,8 @@
-import { port } from "../../port";
+import { path } from "../../port";
 import Swal from "sweetalert2";
 
 async function cancelBuy(change, setChange) {
-  let canceled = await fetch(`http://localhost:${port}/api/carts/all`, {
+  let canceled = await fetch(`${path}/api/carts/all`, {
     method: "DELETE",
     credentials: "include",
     headers: {

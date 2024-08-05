@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { port } from "../../port";
+import { path } from "../../port";
 
 //Funcion que envia el mail de recuperacion
 function sendRecoverMail() {
@@ -18,7 +18,7 @@ function sendRecoverMail() {
         email
       }
       let change = await fetch(
-        `http://localhost:${port}/api/sessions/password`,
+        `${path}/api/sessions/password`,
         {
           method: "POST",
           headers: {
@@ -70,7 +70,7 @@ export function useChangePass(uid) {
         password
       }
       let change = await fetch(
-        `http://localhost:${port}/api/sessions/password`,
+        `${path}/api/sessions/password`,
         {
           method: "PUT",
           headers: {

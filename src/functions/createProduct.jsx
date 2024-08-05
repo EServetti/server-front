@@ -1,8 +1,8 @@
-import { port } from "../../port";
+import { path} from "../../port";
 import Swal from "sweetalert2";
 
 async function createProduct(product) {
-  let response = await fetch(`http://localhost:${port}/api/products`, {
+  let response = await fetch(`${path}/api/products`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -21,7 +21,7 @@ async function createProduct(product) {
     })
   } else {
     Swal.fire({
-      title: response.message,
+      title: `The product ${response.message.title} has been created!`,
       confirmButtonText: "Accept",
       timer: 5000,
       timerProgressBar: true,

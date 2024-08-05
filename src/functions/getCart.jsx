@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { port } from "../../port.js";
+import { path} from "../../port.js";
 
 function useCart(){
   const [carts, setCarts] = useState(null)
@@ -8,7 +8,7 @@ function useCart(){
 
   useEffect(() => {
     async function getCarts() {
-      let carts = await fetch(`http://localhost:${port}/api/tickets`,{
+      let carts = await fetch(`${path}/api/tickets`,{
         credentials: "include"
       })
       carts = await carts.json()

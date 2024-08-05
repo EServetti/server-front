@@ -1,7 +1,7 @@
-import { port } from "../../port"
+import { path} from "../../port"
 
 function useGoogle() {
-  location.replace(`http://localhost:${port}/session/google`)
+  location.replace(`${path}/session/google`)
 }
 
 export default useGoogle

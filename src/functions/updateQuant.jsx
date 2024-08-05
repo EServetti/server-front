@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { port } from "../../port";
+import { path} from "../../port";
 
 async function update(quantity, _id, inputId, change, setChange) {
   const quant = document.querySelector(`#${inputId}`).value
@@ -15,7 +15,7 @@ async function update(quantity, _id, inputId, change, setChange) {
     const data = {
       quantity: quant
     }
-    let updated =await fetch(`http://localhost:${port}/api/carts/${_id}`, {
+    let updated =await fetch(`${path}/api/carts/${_id}`, {
       method: "PUT",
       credentials: "include",
       headers: {

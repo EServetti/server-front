@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { port } from "../../port";
+import { path } from "../../port";
 
 function usePhoto(file) {
   async function updatePhoto(file) {
@@ -14,7 +14,7 @@ function usePhoto(file) {
     } else {
       const formData = new FormData();
       formData.append("photo", photo.files[0]);
-      const change = await fetch(`http://localhost:${port}/users`, {
+      const change = await fetch(`${path}/users`, {
         method: "PUT",
         credentials: "include",
         body: formData,

@@ -1,9 +1,9 @@
-import { port } from "../../port.js";
+import { path } from "../../port.js";
 import Swal from "sweetalert2";
 
 async function deleteCart(_id, change, setChange) {
   try {
-    let deleted = await fetch(`http://localhost:${port}/api/carts/${_id}`, {
+    let deleted = await fetch(`${path}/api/carts/${_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

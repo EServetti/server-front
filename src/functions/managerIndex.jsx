@@ -1,4 +1,4 @@
-import { port } from "../../port.js";
+import { path } from "../../port.js";
 import { useEffect, useState } from "react";
 import Product from "../components/main components/index/product.jsx";
 
@@ -11,7 +11,7 @@ export function manageIndex() {
 
   //Effect que trae los products al cargar la pagina y guarda la info del paginate
   useEffect(() => {
-    fetch(`http://localhost:${port}/api/products/paginate?limit=9&page=1`, {
+    fetch(`${path}/api/products/paginate?limit=9&page=1`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export function manageIndex() {
 
   function changePage (newPage,catQuery) {
     fetch(
-      `http://localhost:${port}/api/products/paginate?limit=9&page=${newPage}${catQuery}`,
+      `${path}/api/products/paginate?limit=9&page=${newPage}${catQuery}`,
       {
         method: "GET",
         headers: {

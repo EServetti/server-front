@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { port } from '../../port.js';
+import { path } from '../../port.js';
 
 const useUserDataFetch = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:${port}/api/sessions`, {
+    fetch(`${path}/api/sessions`, {
       method: "POST",
       credentials: "include",
       headers: {

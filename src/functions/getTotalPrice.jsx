@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { port } from "../../port.js";
+import { path} from "../../port.js";
 
 
 function useTotal(_id) {
@@ -13,7 +13,7 @@ function useTotal(_id) {
       const data = {
         uid: _id,
       };
-      let total = await fetch(`http://localhost:${port}/api/tickets/total`, {
+      let total = await fetch(`${path}/api/tickets/total`, {
         method: "POST",
         credentials: "include",
         headers: {

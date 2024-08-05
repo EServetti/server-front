@@ -1,7 +1,7 @@
-import { port } from "../../port";
+import { path } from "../../port";
 
 async function filterByTitle(title) {
-  let all = await fetch(`http://localhost:${port}/api/products`);
+  let all = await fetch(`${path}/api/products`);
   all = await all.json();
   if(all.statusCode == 200 && title) {
     const filtered = all.message.filter((product) => 

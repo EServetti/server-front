@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 import { io } from "socket.io-client";
 import Swal from "sweetalert2";
 //functions
-import { port } from "../../../../port.js";
+import { path} from "../../../../port.js";
 import ProductCreate from "./productCreate.jsx";
 import useForm from "../../../functions/manageCreateForm.jsx";
 import createProduct from "../../../functions/createProduct.jsx";
@@ -43,7 +43,7 @@ function CreateProduct() {
   }, [content]);
 
   useEffect(() => {
-    const newSocket = io(`http://localhost:${port}`);
+    const newSocket = io(path);
 
     newSocket.on("connect", () => {
       newSocket.emit("fetch-products");

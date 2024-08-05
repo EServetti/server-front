@@ -1,5 +1,5 @@
 import Swal from "sweetalert2"
-import { port } from "../../port.js"
+import { path} from "../../port.js"
 
 function useComplete() {
   const bithDate = document.querySelector("#birthdate").value
@@ -30,7 +30,7 @@ function useComplete() {
         phone,
         complete: true
       }
-      let change = await fetch(`http://localhost:${port}/users`, {
+      let change = await fetch(`${path}/users`, {
         method: "PUT",
         credentials: "include",
         headers: {
