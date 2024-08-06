@@ -27,6 +27,9 @@ function UserData() {
         <LinkDetails className="my-account" to="/account" closeDet={closeDet} detailsRef={detailsRef}>
           My account
         </LinkDetails>
+        <LinkDetails className="my-account" to="/purchases" closeDet={closeDet} detailsRef={detailsRef}>
+          My purchases
+        </LinkDetails>
         <CloseSession />
       </div>
     </details>

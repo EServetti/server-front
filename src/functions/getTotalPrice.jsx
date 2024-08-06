@@ -13,7 +13,7 @@ function useTotal(_id) {
       const data = {
         uid: _id,
       };
-      let total = await fetch(`${path}/api/tickets/total`, {
+      let total = await fetch(`${path}/api/tickets/total?state=reserved`, {
         method: "POST",
         credentials: "include",
         headers: {

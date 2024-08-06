@@ -17,7 +17,7 @@ async function addToCart(_id, online) {
     body: JSON.stringify(data)
   });
   added = await added.json()
-  if(added.statusCode === 200){
+  if(added.statusCode === 201){
     Swal.fire({
       title: "The product was added to cart!",
       confirmButtonText: "Accept",

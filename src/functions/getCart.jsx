@@ -8,7 +8,7 @@ function useCart(){
 
   useEffect(() => {
     async function getCarts() {
-      let carts = await fetch(`${path}/api/tickets`,{
+      let carts = await fetch(`${path}/api/tickets?state=reserved`,{
         credentials: "include"
       })
       carts = await carts.json()

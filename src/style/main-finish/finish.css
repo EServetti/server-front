@@ -45,7 +45,7 @@
     font-size: 25px;
 }
 
-.payment{
+/* .payment{
     min-height: 400px;
     width: 80%;
     display: flex;
@@ -77,27 +77,6 @@
     border: none;
     border-radius: 10px;
     padding: 0;
-}
-
-.pay-button {
-    height: 35px;
-    width: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    background-color: #6781B4;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 5px 5px 20px black
-}
-
-.pay-button:hover {
-    height: 35px;
-    width: 80px;
-    border: 1px solid white;
 }
 
 .pay-contant {
@@ -151,4 +130,27 @@ h3 {
     flex-direction: column;
     padding-right: 10px;
     gap: 5px;
+} */
+
+
+.pay-button {
+    height: 35px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    margin-bottom: 20px;
+    background-color: #6781B4;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px black
+}
+
+.pay-button:hover {
+    height: 35px;
+    width: 80px;
+    border: 1px solid white;
 }
