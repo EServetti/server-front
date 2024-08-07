@@ -1,6 +1,9 @@
 
 export function navigate(href) {
     window.history.pushState({}, "", href);
+    console.log(href);
+    console.log(window.history);
+    
     //creo un evento para registrar el cambio de url
     const navigationEvent = new Event("nav")
     window.dispatchEvent(navigationEvent)
