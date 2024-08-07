@@ -44,7 +44,7 @@ async function registerUser(data) {
             timerProgressBar: true,
             confirmButtonColor: "#466365",
         }).then(() => {
-          navigate("/login");
+          navigate("/");
         });
     } else {
         Swal.fire({
