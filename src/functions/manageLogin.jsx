@@ -21,7 +21,7 @@ async function handleClick(globalState, setGlobalState) {
   })
   logged = await logged.json()
   if (logged.statusCode === 200) {
-    return navigate("/")
+    navigate("/")
   } else {
     Swal.fire({
       title: logged.message,
