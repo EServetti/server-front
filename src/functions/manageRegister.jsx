@@ -43,8 +43,10 @@ async function registerUser(data) {
             timer: 5000,
             timerProgressBar: true,
             confirmButtonColor: "#466365",
-        })
-        return navigate("/login");
+        }).then(() => {
+            console.log("Tiene que hacer esto");
+          return navigate("/login");
+        });
     } else {
         Swal.fire({
             title: register.message,
