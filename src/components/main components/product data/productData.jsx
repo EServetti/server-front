@@ -34,7 +34,7 @@ function ProductDataCont({ routeParams }) {
             <h3 className="product-category">
               Category: {loading ? "" : prod.category}
             </h3>
-            <h3 className="product-price">{loading ? "" : `$${prod.price}`}</h3>
+            <h3 className="product-price">{loading ? "" : `$USD ${prod.price}`}</h3>
           </section>
         </section>
         <section className="product-description">
