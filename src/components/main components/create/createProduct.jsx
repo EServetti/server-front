@@ -50,7 +50,6 @@ function CreateProduct() {
     });
   
     newSocket.on("connect", () => {
-      console.log('Socket connected with id:', newSocket.id);
       newSocket.emit("fetch-products");
     });
   
@@ -59,14 +58,12 @@ function CreateProduct() {
     });
   
     newSocket.on("products", (all) => {
-      console.log('Products received');
       setContent(all);
     });
   
     setSocket(newSocket);
   
     return () => {
-      console.log('Cleaning up socket');
       newSocket.disconnect();
     };
   }, []);
