@@ -83,12 +83,14 @@
   }
 
   .passwords {
+    height: auto;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
-
+  
 
 .main-verify {
   min-height: 100vh;
@@ -98,4 +100,34 @@
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.pass-register-span {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass-register-span input {
+  height: auto;
+  width: 80%;
+  border-radius: 10px 0 0 10px;
+}
+
+.pass-register-span img {
+  height: 50%;
+  width: auto;
+}
+
+.pass-register-span button {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: white;
+  border-radius: 0 10px 10px 0
 }

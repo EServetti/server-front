@@ -43,7 +43,7 @@ function Register() {
             <input type="text" id="name" placeholder="name" />
           </span>
           <span className="passwords">
-            <span className="pass-span">
+            <span className="pass-register-span">
             <input type={ !passView ? "password" : "text"} id="password" placeholder="password" />
             <button onClick={managePass}>
               <img src={ !passView ? "/img/hide.png" : "/img/view.png"}/>
