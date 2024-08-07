@@ -1,5 +1,6 @@
 import Swal from "sweetalert2";
 import { path } from "../../port.js";
+import navigate from "../components/Link.jsx"
 
 function handleClick() {
     const email = document.querySelector("#email").value;
@@ -42,7 +43,7 @@ async function registerUser(data) {
             timerProgressBar: true,
             confirmButtonColor: "#466365",
         }).then(() => {
-            return location.replace("/login");
+            return navigate("/login");
         });
     } else {
         Swal.fire({
