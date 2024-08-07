@@ -35,6 +35,8 @@ async function registerUser(data) {
         body: JSON.stringify(data),
     });
     register = await register.json();
+    console.log(register);
+    
     if (register.statusCode === 201) {
         Swal.fire({
             title: "We've sent you a verification mail",
@@ -43,6 +45,7 @@ async function registerUser(data) {
             timerProgressBar: true,
             confirmButtonColor: "#466365",
         }).then(() => {
+            console.log("registered");
           navigate("/login");
         });
     } else {

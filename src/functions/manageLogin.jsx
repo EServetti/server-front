@@ -20,7 +20,10 @@ async function handleClick(globalState, setGlobalState) {
       credentials: 'include'
   })
   logged = await logged.json()
+  console.log(logged);
+  
   if (logged.statusCode === 200) {
+    console.log("logged");
     navigate("/")
   } else {
     Swal.fire({
