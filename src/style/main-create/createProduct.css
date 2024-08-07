@@ -71,7 +71,8 @@
 .create-form select {
     font-size: 13px;
     color: gray;
-    width: 80%;
+    width: 75%;
+    border-radius: 15px;
 }
 
 .create-form label {
