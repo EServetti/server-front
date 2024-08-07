@@ -43,19 +43,27 @@ function CreateProduct() {
   }, [content]);
 
   useEffect(() => {
+    console.log('Initializing socket connection');
     const newSocket = io(path);
-    
+  
     newSocket.on("connect", () => {
+      console.log('Socket connected with id:', newSocket.id);
       newSocket.emit("fetch-products");
     });
-
+  
+    newSocket.on("disconnect", (reason) => {
+      console.log('Socket disconnected:', reason);
+    });
+  
     newSocket.on("products", (all) => {
+      console.log('Products received');
       setContent(all);
     });
-
-    setSocket(newSocket)
-
+  
+    setSocket(newSocket);
+  
     return () => {
+      console.log('Cleaning up socket');
       newSocket.disconnect();
     };
   }, []);
