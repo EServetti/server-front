@@ -44,7 +44,10 @@ function CreateProduct() {
 
   useEffect(() => {
     console.log('Initializing socket connection');
-    const newSocket = io(path);
+    const newSocket = io(path, {
+      transports: ['websocket'], 
+      withCredentials: true
+    });
   
     newSocket.on("connect", () => {
       console.log('Socket connected with id:', newSocket.id);
