@@ -3,10 +3,7 @@ import { navigate } from "../Link.jsx";
 
 function CloseSession() {
   const handleClick = async () => {
-    const res = await logout();
-    if (res) {
-      location.replace("/");
-    }
+    await logout()
   };
   return (
     <button className="close-session" onClick={handleClick}>
