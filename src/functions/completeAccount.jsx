@@ -51,8 +51,17 @@ function useComplete() {
         }).then(() => {
           location.replace("/account")
         })
+      } else if(change.statusCode === 400){
+        Swal.fire({
+          title: change.message,
+          confirmButtonText: "Accept",
+          timer: 5000,
+          timerProgressBar: true,
+          confirmButtonColor: "#466365",
+        })
       } else {
         location.replace("/")
+
       }
     }
     completeAccount(age, phone)
