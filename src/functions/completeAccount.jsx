@@ -39,6 +39,8 @@ function useComplete() {
         body: JSON.stringify(data),
       });
       change = await change.json()
+      console.log(change);
+      
       if(change.statusCode === 200) {
         Swal.fire({
           title: change.message,
