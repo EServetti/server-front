@@ -74,7 +74,7 @@ export function manageIndex() {
   //filtrar por category
   function filter(category) {
     fetch(
-      `http://localhost:8080/api/products/paginate?category=${category}&limit=9&page=1`,
+      `${path}/api/products/paginate?category=${category}&limit=9&page=1`,
       {
         method: "GET",
         headers: {
