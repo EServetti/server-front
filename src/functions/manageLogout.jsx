@@ -10,9 +10,9 @@ async function logout () {
     })
     response = await response.json()
     console.log(response);
-    if (response.statusCode === 200) {
-      return location.replace("/")
-    }
+    // if (response.statusCode === 200) {
+    //   return location.replace("/")
+    // }
     return response
 }
 

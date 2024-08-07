@@ -101,9 +101,9 @@ function CreateProduct() {
               <option value="none" disabled>
                 Category of the product
               </option>
-              <option value="hogar">house</option>
-              <option value="cocina">kitchen</option>
-              <option value="electrodomésticos">home appliances</option>
+              <option value="house">house</option>
+              <option value="kitchen">kitchen</option>
+              <option value="appliances">home appliances</option>
             </select>
             <label htmlFor="photo">{fileName}</label>
             <input

@@ -33,11 +33,11 @@ function MainIndex() {
         <section className="category">
           <span>Any category in special?</span>
           <section className="categories">
-            <House filter={filter} category="hogar" actual={category} />
-            <Kitchen filter={filter} category="cocina" actual={category} />
+            <House filter={filter} category="house" actual={category} />
+            <Kitchen filter={filter} category="kitchen" actual={category} />
             <Appliancies
               filter={filter}
-              category="electrodomésticos"
+              category="appliances"
               actual={category}
             />
           </section>
