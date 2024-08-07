@@ -49,10 +49,10 @@ function useComplete() {
           timerProgressBar: true,
           confirmButtonColor: "#466365",
         }).then(() => {
-          // location.replace("/account")
+          location.replace("/account")
         })
       } else {
-        // location.replace("/")
+        location.replace("/")
       }
     }
     completeAccount(age, phone)
