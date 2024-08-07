@@ -44,10 +44,8 @@ function CreateProduct() {
 
   useEffect(() => {
     const newSocket = io(path);
-    console.log("socket is:"+newSocket);
     
     newSocket.on("connect", () => {
-      console.log("socket connected");
       newSocket.emit("fetch-products");
     });
 
@@ -58,7 +56,6 @@ function CreateProduct() {
     setSocket(newSocket)
 
     return () => {
-      console.log("socket disconnected");
       newSocket.disconnect();
     };
   }, []);
