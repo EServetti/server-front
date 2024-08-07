@@ -29,6 +29,7 @@ function handleClick() {
 async function registerUser(data) {
   let register = await fetch(`${path}/api/sessions/register`, {
     method: "POST",
+    credentials: "include",
     headers: {
       "Content-Type": "application/json",
     },
