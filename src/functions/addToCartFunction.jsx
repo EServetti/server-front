@@ -37,7 +37,15 @@ async function addToCart(_id, online) {
     }).then(() => {
       location.reload()
     })
-  }else {
+  }else if(added.statusCode === 400) {
+    Swal.fire({
+      title: added.message,
+      confirmButtonText: "Accept",
+      timer: 5000,
+      timerProgressBar: true,
+      confirmButtonColor: "#466365",
+    })
+  } else {
     Swal.fire({
       title: "You must log in first!",
       confirmButtonText: "Accept",
