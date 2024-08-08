@@ -17,6 +17,8 @@ import RecoverPass from "./components/main components/recover password/recoverPa
 import ChangePass from "./components/main components/recover password/changePass.jsx";
 import Verify from "./components/main components/register/verify.jsx";
 import CreateProduct from "./components/main components/create/createProduct.jsx";
+import Thanks from "./components/main components/thanks/thank-you.jsx";
+import Purchases from "./components/main components/purchases/purchases.jsx";
 
 
 // todas las rutas del sitio web
@@ -68,6 +70,14 @@ const routes = [
   {
     path: "/create",
     component: CreateProduct
+  },
+  {
+    path: "/thank-you",
+    component: Thanks
+  },
+  {
+    path: "/purchases",
+    component: Purchases
   }
 ];
 

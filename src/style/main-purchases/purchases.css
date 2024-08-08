@@ -1,0 +1,69 @@
+.main-purchases{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.purchases-top {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+
+.purchases-section {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    background-color: white;
+}
+
+.purchase-cart {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-left: 30px;
+    border: 2px solid burlywood;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.purchase-cart img {
+    height: 80%;
+    width: 30%;
+    border: 1px solid burlywood;
+    border-radius: 15px;
+}
+
+.purchase-info {
+    height: 100%;
+    width: 70%;
+    padding: 15px;border-radius: 15px;
+    background-image: url("/img/madera.jpeg");
+}
+
+.purchases-info{
+    height: auto;
+    width: 70%;
+}
+
+.not-purchases {
+    color: black;
+}
