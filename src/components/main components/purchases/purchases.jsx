@@ -19,7 +19,7 @@ function Purchases() {
     <div className="main-purchases">
       <h1 className="purchases-top">Your purchases</h1>
       <section className="purchases-section">
-        {loading ? <h3>loading</h3> : carts?  returnPurchasesCart(carts.message) : <h2 className="not-purchases">You havn't bought anything</h2>}
+        {loading ? <h3>loading</h3> : carts?  returnPurchasesCart(carts.message) : <h2 className="not-purchases">You haven't bought anything</h2>}
       </section>
       <section className="purchases-info">
         <h1>Delivery Information</h1>
