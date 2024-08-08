@@ -35,7 +35,7 @@
 
 .product-img {
     height: 60%;
-    width: 80%;
+    width: auto;
     border: 2px solid burlywood;
 }
 
