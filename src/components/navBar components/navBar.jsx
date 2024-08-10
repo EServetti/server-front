@@ -7,6 +7,7 @@ import Loged1 from "./loged1Nav.jsx";
 //modules
 import { useContext } from "react";
 import { AppContext } from "../../../AppContext.jsx";
+import Loged2 from "./loged2Nav.jsx";
 
 
 function NavBar() {
@@ -21,8 +22,9 @@ function NavBar() {
       </span>
       {loading && <></>}
       {!online && <NoLoged />}
-      {online && userData.role === 0 && <Loged0 />}
-      {online && userData.role === 1 && <Loged1 />}
+      {online && userData.role === "user" && <Loged0 />}
+      {online && userData.role === "premium" && <Loged1 />}
+      {online && userData.role === "admin" && <Loged2 />}
     </div>
   );
 }
