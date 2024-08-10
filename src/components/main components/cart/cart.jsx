@@ -18,7 +18,7 @@ function CartContainer() {
   const {globalState} = useContext(AppContext)
   const {online, userData} = globalState
   useEffect(() => {
-    if(!globalState.loading && !online) {
+    if(!globalState.loading && !online || !globalState.loading && userData.role === "admin") {
       location.replace("/")
     }
   }, [globalState.loading, online, userData])
