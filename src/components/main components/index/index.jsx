@@ -45,7 +45,7 @@ function MainIndex() {
       </div>
       </div>
       <div className="products-cont">
-        {content && content.length === 0 ? <p className="loading">We couldn't find the product</p> : content ? returnContent() : <p className="loading">Loading...</p>}
+        {content && content.length === 0 ? <p className="loading">We couldn't find the product</p> : content ? returnContent(content) : <p className="loading">Loading...</p>}
       </div>
       <div className="page-manager">
         <PrevPage page={page} prev={prev} />

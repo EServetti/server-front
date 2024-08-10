@@ -25,7 +25,7 @@ export function manageIndex() {
       });
   }, []);
 
-  function returnContent() {
+  function returnContent(content) {
     return content.map((each) => (
       <Product
         key={each.title}
@@ -33,6 +33,7 @@ export function manageIndex() {
         _id={each._id}
         photo={each.photo}
         price={each.price}
+        stock={each.stock}
       />
     ));
   }

@@ -19,7 +19,8 @@ import Verify from "./components/main components/register/verify.jsx";
 import CreateProduct from "./components/main components/create/createProduct.jsx";
 import Thanks from "./components/main components/thanks/thank-you.jsx";
 import Purchases from "./components/main components/purchases/purchases.jsx";
-
+import { path } from "../port.js";
+import myProducts from "./components/main components/my-products/myProducts.jsx";
 
 // todas las rutas del sitio web
 const routes = [
@@ -37,7 +38,7 @@ const routes = [
   },
   {
     path: "/verify/:email/:verifyCode",
-    component: Verify
+    component: Verify,
   },
   {
     path: "/product/:nid",
@@ -51,34 +52,38 @@ const routes = [
     path: "/finish",
     component: FinishBuyCont,
   },
-  { 
+  {
     path: "/account",
-    component: MyAccount 
+    component: MyAccount,
   },
   {
     path: "/complete-account",
-    component: CompleteAccount
+    component: CompleteAccount,
   },
   {
     path: "/recover-password",
-    component: RecoverPass
+    component: RecoverPass,
   },
   {
     path: "/recover-password/:uid",
-    component: ChangePass
+    component: ChangePass,
   },
   {
     path: "/create",
-    component: CreateProduct
+    component: CreateProduct,
   },
   {
     path: "/thank-you",
-    component: Thanks
+    component: Thanks,
   },
   {
     path: "/purchases",
-    component: Purchases
-  }
+    component: Purchases,
+  },
+  {
+    path: "/my-products",
+    component: myProducts,
+  },
 ];
 
 function App() {
@@ -91,7 +96,7 @@ function App() {
         <Router routes={routes} />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
