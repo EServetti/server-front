@@ -22,7 +22,7 @@ function CreateProduct() {
   useEffect(() => {
     if (!loading && !online) {
       location.replace("/");
-    } else if (!loading && userData.role === 0) {
+    } else if (!loading && userData.role === "user") {
       location.replace("/");
     }
   }, [loading, online, userData]);

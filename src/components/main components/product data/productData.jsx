@@ -40,8 +40,7 @@ function ProductDataCont({ routeParams }) {
         <section className="product-description">
           <p className="description">{loading ? "" : prod.description}</p>
           <span className="add-cart-span">
-            Do you like it?{" "}
-            <AddToCart _id={nid} online={online}/>
+            {loading ? "" : prod.stock > 0 ? (<>Do you like it? <AddToCart _id={nid} online={online}/></>) : (<>Sorry this product doesn't have anymore stock, we're working to supply it again!</>)}
           </span>
         </section>
       </div>
