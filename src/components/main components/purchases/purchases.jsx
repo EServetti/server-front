@@ -3,6 +3,7 @@ import "../../../style/main-purchases/purchases.css";
 import usePurchases from "../../../functions/getPurchases";
 import { AppContext } from "../../../../AppContext";
 import PurchaseCart, { returnPurchasesCart } from "./purchaseCart";
+import { Helmet } from "react-helmet";
 
 function Purchases() {
   const { globalState } = useContext(AppContext);
@@ -17,6 +18,9 @@ function Purchases() {
 
   return (
     <div className="main-purchases">
+      <Helmet>
+        <title>Purchases</title>
+      </Helmet>
       <h1 className="purchases-top">Your purchases</h1>
       <section className="purchases-section">
         {loading ? <h3>loading</h3> : carts?  returnPurchasesCart(carts.message) : <h2 className="not-purchases">You haven't bought anything</h2>}

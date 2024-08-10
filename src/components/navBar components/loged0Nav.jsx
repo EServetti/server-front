@@ -6,7 +6,7 @@ function Loged0() {
   return (
     <>
       <section>
-        <Link to="/">HOME</Link>
+        <Link to="/">Home</Link>
       </section>
       <section className="cart-and-user">
         <UserData />
