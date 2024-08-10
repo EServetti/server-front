@@ -47,7 +47,7 @@ function MyAccount() {
           <span>{!online ? "" : email ? "Email: " + email : ""}</span>
           <span>{!online ? "" : age ? "Age: " + age : ""}</span>
           <span>{!online ? "" : phone ? "Phone: " + phone : ""}</span>
-          {user?.complete ? "" : <section className="complete-account">
+          {user?.complete ? <p>Do you want to become a seller? contact us at everithingforyourhome@gmail.com</p> : <section className="complete-account">
           <span>You almost complete your account,</span>
           <Link to="/complete-account" className="complete-link">Fill this form to complete it</Link>
           </section>}

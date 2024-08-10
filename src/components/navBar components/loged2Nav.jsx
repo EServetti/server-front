@@ -8,6 +8,7 @@ function Loged2() {
       <section className="home-and-create">
         <Link to="/">Home</Link>
         <Link to="/create">Create</Link>
+        <Link to="/my-products">My products</Link>
       </section>
       <section className="cart-and-user">
         <UserData />

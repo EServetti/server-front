@@ -6,7 +6,7 @@ function Footer() {
       <section className="contact-section">
         <span>Contact us:</span>
         <span>Phone: +34 123 456 789 </span>
-        <span>Email: Everithingforyourhome@gmail.com</span>
+        <span>Email: everithingforyourhome@gmail.com</span>
         <span>Address: Avenida Hipólito Yrigoyen, 123, Córdoba, Argentina</span>
       </section>
       <section className="about-us-section">
