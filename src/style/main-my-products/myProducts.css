@@ -31,3 +31,75 @@
     height: auto;
     width: 70%;
 }
+
+.my-product-stock {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp-stock {
+    height: auto;
+    width: 50%;
+    background-color: transparent;
+    color: white;
+    margin-left: 10px;
+}
+
+.my-product {
+    height: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/madera.jpeg");
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    gap: 5px;
+}
+
+.my-product img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    border: 2px solid white
+}
+
+.my-product .description {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-my-product {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+.delete-my-product:hover {
+    border: 1px solid white;
+}
+
+.change-my-product {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
