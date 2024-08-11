@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { path} from "../../port.js";
 
-function useMyProducts(){
-  const [products, setProducts] = useState(null)
+function useMyProducts(setMyProducts){
   const [loading, setLoading] = useState(true)
+  const [change, setChange] = useState(true)
 
   useEffect(() => {
     async function getCarts() {
@@ -13,19 +13,19 @@ function useMyProducts(){
       })
       prods = await prods.json()
       if(prods.statusCode === 200) {
-        setProducts(prods)
+        setMyProducts(prods.message)
         setLoading(false)
       }else {
-        setProducts(null)
+        setMyProducts(null)
         setLoading(false)
       }
     }
 
     getCarts()
     
-  }, [])
+  }, [change])
 
-  return {products, loading}
+  return {loading, change, setChange}
 }
 
 export default useMyProducts
