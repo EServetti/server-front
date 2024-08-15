@@ -37,7 +37,7 @@ async function addToCart(_id, online) {
     }).then(() => {
       location.reload()
     })
-  }else if(added.statusCode === 400) {
+  }else if(added.statusCode === 400 || added.statusCode === 401) {
     Swal.fire({
       title: added.message,
       confirmButtonText: "Accept",
