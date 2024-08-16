@@ -37,7 +37,7 @@ async function addToCart(_id, online) {
     }).then(() => {
       location.reload()
     })
-  }else if(added.statusCode === 400 || added.statusCode === 401) {
+  }else {
     Swal.fire({
       title: added.message,
       confirmButtonText: "Accept",
@@ -45,14 +45,6 @@ async function addToCart(_id, online) {
       timerProgressBar: true,
       confirmButtonColor: "#466365",
     })
-  } else {
-    Swal.fire({
-      title: "You must log in first!",
-      confirmButtonText: "Accept",
-      timer: 5000,
-      timerProgressBar: true,
-      confirmButtonColor: "#466365",
-    })
-  }
+  } 
 }
 export default addToCart
