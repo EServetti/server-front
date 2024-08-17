@@ -33,24 +33,26 @@
 }
 
 .look-products {
-    height: 40%;
-    width: 70%;
+    height: 100%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .look-products input {
-    height: 50%;
-    width: 70%;
-    border-radius: 15px 0 0 15px;
-    padding: 10px;
+    height: auto;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
 }
 
 .look-products button {
     height: 100%;
     width: auto;
     padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
@@ -58,8 +60,8 @@
 }
 
 .look-products img {
-    height: auto;
-    width: 82%;
+    height: 50%;
+    width: auto;
 }
 
 .category {
