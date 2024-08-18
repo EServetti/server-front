@@ -38,18 +38,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.look-products input {
-    height: auto;
+  }
+  
+  .look-products input {
+    height: 100%; 
     width: 50%;
     border-radius: 10px 0 0 10px;
-}
-
-.look-products button {
-    height: 100%;
+    padding: 9px; 
+    margin: 0; 
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center; 
+    border: none; 
+  }
+  
+  .look-products button {
+    height: 100%; 
     width: auto;
-    padding: 6px;
+    padding: 5px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,12 +63,16 @@
     border-radius: 0 15px 15px 0;
     cursor: pointer;
     background-color: white;
-}
+    box-sizing: border-box; 
+  }
 
-.look-products img {
-    height: 50%;
+  .look-products img {
+    height: 100%; 
     width: auto;
-}
+    margin: 0; 
+    padding: 0; 
+  }
+  
 
 .category {
     height: auto;
